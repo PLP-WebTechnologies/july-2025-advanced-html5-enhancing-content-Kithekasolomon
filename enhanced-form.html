@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for our Sustainable Gardening Workshop to learn eco-friendly gardening techniques, view schedules, and explore resources.">
+    <meta name="keywords" content="sustainable gardening, gardening workshop, eco-friendly gardening, organic gardening, registration">
+    <meta name="author" content="Green Living Academy">
+    <meta name="robots" content="index, follow">
+    <title>Sustainable Gardening Workshop Registration</title>
+</head>
+<body>
+    <!-- Header with site branding -->
+    <header>
+        <h1>Sustainable Gardening Workshop</h1>
+        <p>Learn Eco-Friendly Gardening with Green Living Academy</p>
+    </header>
+
+    <!-- Navigation for main sections -->
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content area -->
+    <main id="home">
+        <!-- Hero section with image -->
+        <section aria-labelledby="hero-heading">
+            <h2 id="hero-heading">Welcome to Our Workshop</h2>
+            <p>Join us to learn sustainable gardening practices that benefit the environment.</p>
+            <figure>
+                <img src="https://via.placeholder.com/600x300?text=Garden" alt="Vibrant eco-friendly garden with native plants and compost" width="600" height="300">
+                <figcaption>A thriving eco-friendly garden.</figcaption>
+            </figure>
+        </section>
+
+        <!-- About section with list -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About the Workshop</h2>
+            <p>Our workshop teaches you how to create sustainable gardens using organic methods.</p>
+            <h3>What You'll Learn</h3>
+            <ul>
+                <li>Composting techniques for nutrient-rich soil</li>
+                <li>Selecting native plants for low-maintenance gardens</li>
+                <li>Efficient irrigation to conserve water</li>
+                <li>Pest control without harmful chemicals</li>
+            </ul>
+        </section>
+
+        <!-- Schedule section with table -->
+        <section id="schedule" aria-labelledby="schedule-heading">
+            <h2 id="schedule-heading">Workshop Schedule</h2>
+            <table role="grid" aria-describedby="schedule-desc">
+                <caption id="schedule-desc">Schedule for Sustainable Gardening Workshop, November 2025</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Topic</th>
+                        <th scope="col">Instructor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nov 1, 2025</td>
+                        <td>10:00 AM - 12:00 PM</td>
+                        <td>Introduction to Sustainable Gardening</td>
+                        <td>Jane Doe</td>
+                    </tr>
+                    <tr>
+                        <td>Nov 2, 2025</td>
+                        <td>1:00 PM - 3:00 PM</td>
+                        <td>Composting Basics</td>
+                        <td>John Smith</td>
+                    </tr>
+                    <tr>
+                        <td>Nov 3, 2025</td>
+                        <td>9:00 AM - 11:00 AM</td>
+                        <td>Native Plant Selection</td>
+                        <td>Alice Green</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Resources section with media (audio) -->
+        <section id="resources" aria-labelledby="resources-heading">
+            <h2 id="resources-heading">Gardening Resources</h2>
+            <p>Explore our audio guide to get started with eco-friendly gardening.</p>
+            <figure>
+                <audio controls src="https://www.example.com/gardening-tips.mp3">
+                    <a href="https://www.example.com/gardening-tips.mp3">Download audio guide</a>
+                </audio>
+                <figcaption>Audio: Top 5 Eco-Friendly Gardening Tips</figcaption>
+            </figure>
+        </section>
+
+        <!-- Registration form section -->
+        <section id="register" aria-labelledby="register-heading">
+            <h2 id="register-heading">Register for the Workshop</h2>
+            <form action="/submit" method="post" novalidate>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required minlength="2" maxlength="100" autocomplete="name">
+                    
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required autocomplete="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" autocomplete="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Workshop Preferences</legend>
+                    <label for="session">Preferred Session:</label>
+                    <select id="session" name="session" required>
+                        <option value="">Select a session</option>
+                        <option value="nov1">Nov 1: Introduction</option>
+                        <option value="nov2">Nov 2: Composting</option>
+                        <option value="nov3">Nov 3: Native Plants</option>
+                    </select>
+                    
+                    <label for="experience">Gardening Experience:</label>
+                    <input type="number" id="experience" name="experience" min="0" max="50" placeholder="Years of experience" required>
+                    
+                    <label for="interests">Interests (select all that apply):</label>
+                    <input type="checkbox" id="composting" name="interests" value="composting">
+                    <label for="composting">Composting</label>
+                    <input type="checkbox" id="native-plants" name="interests" value="native_plants">
+                    <label for="native-plants">Native Plants</label>
+                    <input type="checkbox" id="irrigation" name="interests" value="irrigation">
+                    <label for="irrigation">Irrigation</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="comments">Comments or Questions:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Share any questions or special requests"></textarea>
+                    
+                    <label for="newsletter">Subscribe to Newsletter:</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                </fieldset>
+                
+                <button type="submit">Register Now</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer with contact and policies -->
+    <footer>
+        <p>&copy; 2025 Green Living Academy. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+            </ul>
+        </nav>
+        <p>Contact: <a href="mailto:info@greenlivingacademy.com">info@greenlivingacademy.com</a></p>
+    </footer>
+</body>
+</html>
